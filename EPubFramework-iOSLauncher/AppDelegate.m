@@ -1,13 +1,14 @@
 //
 //  AppDelegate.m
-//  EPubFramework-iOSLauncher
+//  EPubReaderImplementation
 //
-//  Created by Tejsvi Tandon on 1/11/18.
+//  Created by Tejsvi Tandon on 1/5/18.
 //  Copyright © 2018 Indpro. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "BaseViewController.h"
+#import "ContainerFile.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIViewController *rootController = [[UIViewController alloc]init];
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = rootController;
+    ContainerFile *obj = [[ContainerFile alloc]init];
+    [obj initWithController:self.window.rootViewController];
     return YES;
 }
 

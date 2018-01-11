@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  EPubFramework-iOSLauncher
+//  EPubReaderImplementation
 //
-//  Created by Tejsvi Tandon on 1/11/18.
+//  Created by Tejsvi Tandon on 1/5/18.
 //  Copyright © 2018 Indpro. All rights reserved.
 //
 

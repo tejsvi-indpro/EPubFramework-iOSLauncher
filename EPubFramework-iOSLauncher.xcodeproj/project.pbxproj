@@ -7,25 +7,439 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E866FB3A200776F700364758 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB39200776F700364758 /* AppDelegate.m */; };
-		E866FB3D200776F700364758 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB3C200776F700364758 /* ViewController.m */; };
-		E866FB40200776F700364758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E866FB3E200776F700364758 /* Main.storyboard */; };
-		E866FB42200776F700364758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E866FB41200776F700364758 /* Assets.xcassets */; };
-		E866FB45200776F700364758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E866FB43200776F700364758 /* LaunchScreen.storyboard */; };
-		E866FB48200776F700364758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB47200776F700364758 /* main.m */; };
+		E866FC40200777F600364758 /* RDFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E866FB582007777E00364758 /* RDFramework.framework */; };
+		E866FC41200777F600364758 /* RDFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E866FB582007777E00364758 /* RDFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E866FC452007780200364758 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E866FC442007780100364758 /* WebKit.framework */; };
+		E866FC472007780700364758 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E866FC462007780700364758 /* UIKit.framework */; };
+		E866FC492007782600364758 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E866FC482007782600364758 /* Foundation.framework */; };
+		E866FC4B2007783300364758 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E866FC4A2007783300364758 /* CoreGraphics.framework */; };
+		E866FC4C2007784200364758 /* annotations.css in Resources */ = {isa = PBXBuildFile; fileRef = E866FB5A2007778A00364758 /* annotations.css */; };
+		E866FC4D2007784200364758 /* childrens-literature-20130206.epub in Resources */ = {isa = PBXBuildFile; fileRef = E866FB5B2007778A00364758 /* childrens-literature-20130206.epub */; };
+		E866FC4E2007784200364758 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB5C2007778A00364758 /* Default-568h@2x.png */; };
+		E866FC4F2007784200364758 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB5D2007778A00364758 /* Default-Landscape.png */; };
+		E866FC502007784200364758 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB5E2007778A00364758 /* Default-Landscape@2x.png */; };
+		E866FC512007784200364758 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB5F2007778A00364758 /* Default-Portrait.png */; };
+		E866FC522007784200364758 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB602007778A00364758 /* Default-Portrait@2x.png */; };
+		E866FC532007784200364758 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB612007778A00364758 /* Default.png */; };
+		E866FC542007784200364758 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB622007778A00364758 /* Default@2x.png */; };
+		E866FC552007784200364758 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E866FB632007778A00364758 /* Localizable.strings */; };
+		E866FC562007784200364758 /* epub30-test-0120-20131022.epub in Resources */ = {isa = PBXBuildFile; fileRef = E866FB652007778A00364758 /* epub30-test-0120-20131022.epub */; };
+		E866FC572007784200364758 /* epub30-test-0220-20131022.epub in Resources */ = {isa = PBXBuildFile; fileRef = E866FB662007778A00364758 /* epub30-test-0220-20131022.epub */; };
+		E866FC582007784200364758 /* epubReadingSystem.epub in Resources */ = {isa = PBXBuildFile; fileRef = E866FB672007778A00364758 /* epubReadingSystem.epub */; };
+		E866FC592007784200364758 /* epubReadingSystem.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB682007778A00364758 /* epubReadingSystem.js */; };
+		E866FC5A2007784200364758 /* epubReadingSystem.sh in Resources */ = {isa = PBXBuildFile; fileRef = E866FB692007778A00364758 /* epubReadingSystem.sh */; };
+		E866FC5B2007784200364758 /* host_app_feedback.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB6A2007778A00364758 /* host_app_feedback.js */; };
+		E866FC5C2007784200364758 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB6B2007778A00364758 /* Icon-29.png */; };
+		E866FC5D2007784200364758 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB6C2007778A00364758 /* Icon-29@2x.png */; };
+		E866FC5E2007784200364758 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB6D2007778A00364758 /* Icon-40.png */; };
+		E866FC5F2007784200364758 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB6E2007778A00364758 /* Icon-40@2x.png */; };
+		E866FC602007784200364758 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB6F2007778A00364758 /* Icon-50.png */; };
+		E866FC612007784200364758 /* Icon-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB702007778A00364758 /* Icon-50@2x.png */; };
+		E866FC622007784200364758 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB712007778A00364758 /* Icon-57.png */; };
+		E866FC632007784200364758 /* Icon-57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB722007778A00364758 /* Icon-57@2x.png */; };
+		E866FC642007784200364758 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB732007778A00364758 /* Icon-60@2x.png */; };
+		E866FC652007784200364758 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB742007778A00364758 /* Icon-72.png */; };
+		E866FC662007784200364758 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB752007778A00364758 /* Icon-72@2x.png */; };
+		E866FC672007784200364758 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB762007778A00364758 /* Icon-76.png */; };
+		E866FC682007784200364758 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FB772007778A00364758 /* Icon-76@2x.png */; };
+		E866FC692007784200364758 /* MathJax.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB792007778A00364758 /* MathJax.js */; };
+		E866FC6A2007784200364758 /* moby-dick-20120118.epub in Resources */ = {isa = PBXBuildFile; fileRef = E866FB7A2007778A00364758 /* moby-dick-20120118.epub */; };
+		E866FC6B2007784200364758 /* page-blanche-20130322.epub in Resources */ = {isa = PBXBuildFile; fileRef = E866FB7B2007778A00364758 /* page-blanche-20130322.epub */; };
+		E866FC6C2007784200364758 /* reader.css in Resources */ = {isa = PBXBuildFile; fileRef = E866FB7C2007778A00364758 /* reader.css */; };
+		E866FC6D2007784200364758 /* reader.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FB7D2007778A00364758 /* reader.html */; };
+		E866FC6E2007784200364758 /* reader_RequireJS-multiple-bundles.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FB7E2007778A00364758 /* reader_RequireJS-multiple-bundles.html */; };
+		E866FC6F2007784200364758 /* reader_RequireJS-no-optimize.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FB7F2007778A00364758 /* reader_RequireJS-no-optimize.html */; };
+		E866FC702007784200364758 /* reader_RequireJS-single-bundle.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FB802007778A00364758 /* reader_RequireJS-single-bundle.html */; };
+		E866FC712007784200364758 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FB832007778A00364758 /* CONTRIBUTING.md */; };
+		E866FC722007784200364758 /* ISSUE_TEMPLATE.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FB842007778A00364758 /* ISSUE_TEMPLATE.md */; };
+		E866FC732007784200364758 /* PULL_REQUEST_TEMPLATE.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FB852007778A00364758 /* PULL_REQUEST_TEMPLATE.md */; };
+		E866FC742007784200364758 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E866FB862007778A00364758 /* .gitignore */; };
+		E866FC752007784200364758 /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = E866FB872007778A00364758 /* .gitmodules */; };
+		E866FC762007784200364758 /* RequireJS_config_browser.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB892007778A00364758 /* RequireJS_config_browser.js */; };
+		E866FC772007784200364758 /* RequireJS_config_common.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB8A2007778A00364758 /* RequireJS_config_common.js */; };
+		E866FC782007784200364758 /* RequireJS_config_multiple-bundles.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB8B2007778A00364758 /* RequireJS_config_multiple-bundles.js */; };
+		E866FC792007784200364758 /* RequireJS_config_multiple-bundles_external-libs.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB8C2007778A00364758 /* RequireJS_config_multiple-bundles_external-libs.js */; };
+		E866FC7A2007784200364758 /* RequireJS_config_single-bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB8D2007778A00364758 /* RequireJS_config_single-bundle.js */; };
+		E866FC7B2007784200364758 /* readium-cfi-js.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB902007778A00364758 /* readium-cfi-js.js */; };
+		E866FC7C2007784200364758 /* readium-cfi-js.js.bundles.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB912007778A00364758 /* readium-cfi-js.js.bundles.js */; };
+		E866FC7D2007784200364758 /* readium-cfi-js.js.map in Resources */ = {isa = PBXBuildFile; fileRef = E866FB922007778A00364758 /* readium-cfi-js.js.map */; };
+		E866FC7E2007784200364758 /* readium-external-libs.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB932007778A00364758 /* readium-external-libs.js */; };
+		E866FC7F2007784200364758 /* readium-external-libs.js.bundles.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB942007778A00364758 /* readium-external-libs.js.bundles.js */; };
+		E866FC802007784200364758 /* readium-external-libs.js.map in Resources */ = {isa = PBXBuildFile; fileRef = E866FB952007778A00364758 /* readium-external-libs.js.map */; };
+		E866FC812007784200364758 /* readium-shared-js.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB962007778A00364758 /* readium-shared-js.js */; };
+		E866FC822007784200364758 /* readium-shared-js.js.bundles.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB972007778A00364758 /* readium-shared-js.js.bundles.js */; };
+		E866FC832007784200364758 /* readium-shared-js.js.map in Resources */ = {isa = PBXBuildFile; fileRef = E866FB982007778A00364758 /* readium-shared-js.js.map */; };
+		E866FC842007784200364758 /* RequireJS.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB992007778A00364758 /* RequireJS.js */; };
+		E866FC852007784200364758 /* readium-shared-js_all.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB9B2007778A00364758 /* readium-shared-js_all.js */; };
+		E866FC862007784200364758 /* readium-shared-js_all.js.bundles.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FB9C2007778A00364758 /* readium-shared-js_all.js.bundles.js */; };
+		E866FC872007784200364758 /* readium-shared-js_all.js.map in Resources */ = {isa = PBXBuildFile; fileRef = E866FB9D2007778A00364758 /* readium-shared-js_all.js.map */; };
+		E866FC882007784200364758 /* sdk.css in Resources */ = {isa = PBXBuildFile; fileRef = E866FB9F2007778A00364758 /* sdk.css */; };
+		E866FC892007784200364758 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBA12007778A00364758 /* index.js */; };
+		E866FC8A2007784200364758 /* index_RequireJS_multiple-bundles.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FBA22007778A00364758 /* index_RequireJS_multiple-bundles.html */; };
+		E866FC8B2007784200364758 /* index_RequireJS_no-optimize.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FBA32007778A00364758 /* index_RequireJS_no-optimize.html */; };
+		E866FC8C2007784200364758 /* index_RequireJS_single-bundle.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FBA42007778A00364758 /* index_RequireJS_single-bundle.html */; };
+		E866FC8D2007784200364758 /* sample_styles.css in Resources */ = {isa = PBXBuildFile; fileRef = E866FBA62007778A00364758 /* sample_styles.css */; };
+		E866FC8E2007784200364758 /* globals.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBA82007778A00364758 /* globals.js */; };
+		E866FC8F2007784200364758 /* globalsSetup.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBA92007778A00364758 /* globalsSetup.js */; };
+		E866FC902007784200364758 /* helpers.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBAA2007778A00364758 /* helpers.js */; };
+		E866FC912007784200364758 /* bookmark_data.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBAC2007778A00364758 /* bookmark_data.js */; };
+		E866FC922007784200364758 /* current_pages_info.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBAD2007778A00364758 /* current_pages_info.js */; };
+		E866FC932007784200364758 /* fixed_page_spread.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBAE2007778A00364758 /* fixed_page_spread.js */; };
+		E866FC942007784200364758 /* media_overlay.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBAF2007778A00364758 /* media_overlay.js */; };
+		E866FC952007784200364758 /* metadata.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB02007778A00364758 /* metadata.js */; };
+		E866FC962007784200364758 /* node_range_info.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB12007778A00364758 /* node_range_info.js */; };
+		E866FC972007784200364758 /* package.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB22007778A00364758 /* package.js */; };
+		E866FC982007784200364758 /* package_data.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB32007778A00364758 /* package_data.js */; };
+		E866FC992007784200364758 /* page_open_request.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB42007778A00364758 /* page_open_request.js */; };
+		E866FC9A2007784200364758 /* smil_iterator.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB52007778A00364758 /* smil_iterator.js */; };
+		E866FC9B2007784200364758 /* smil_model.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB62007778A00364758 /* smil_model.js */; };
+		E866FC9C2007784200364758 /* spine.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB72007778A00364758 /* spine.js */; };
+		E866FC9D2007784200364758 /* spine_item.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB82007778A00364758 /* spine_item.js */; };
+		E866FC9E2007784200364758 /* style.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBB92007778A00364758 /* style.js */; };
+		E866FC9F2007784200364758 /* style_collection.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBBA2007778A00364758 /* style_collection.js */; };
+		E866FCA02007784200364758 /* switches.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBBB2007778A00364758 /* switches.js */; };
+		E866FCA12007784200364758 /* trigger.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBBC2007778A00364758 /* trigger.js */; };
+		E866FCA22007784200364758 /* viewer_settings.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBBD2007778A00364758 /* viewer_settings.js */; };
+		E866FCA32007784200364758 /* plugins_controller.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBBE2007778A00364758 /* plugins_controller.js */; };
+		E866FCA42007784200364758 /* audio_player.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC02007778A00364758 /* audio_player.js */; };
+		E866FCA52007784200364758 /* cfi_navigation_logic.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC12007778A00364758 /* cfi_navigation_logic.js */; };
+		E866FCA62007784200364758 /* external_agent_support.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC22007778A00364758 /* external_agent_support.js */; };
+		E866FCA72007784200364758 /* fixed_view.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC32007778A00364758 /* fixed_view.js */; };
+		E866FCA82007784200364758 /* iframe_loader.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC42007778A00364758 /* iframe_loader.js */; };
+		E866FCA92007784200364758 /* internal_links_support.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC52007778A00364758 /* internal_links_support.js */; };
+		E866FCAA2007784200364758 /* media_overlay_data_injector.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC62007778A00364758 /* media_overlay_data_injector.js */; };
+		E866FCAB2007784200364758 /* media_overlay_element_highlighter.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC72007778A00364758 /* media_overlay_element_highlighter.js */; };
+		E866FCAC2007784200364758 /* media_overlay_player.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC82007778A00364758 /* media_overlay_player.js */; };
+		E866FCAD2007784200364758 /* one_page_view.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBC92007778A00364758 /* one_page_view.js */; };
+		E866FCAE2007784200364758 /* reader_view.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBCA2007778A00364758 /* reader_view.js */; };
+		E866FCAF2007784200364758 /* reflowable_view.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBCB2007778A00364758 /* reflowable_view.js */; };
+		E866FCB02007784200364758 /* scroll_view.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBCC2007778A00364758 /* scroll_view.js */; };
+		E866FCB12007784200364758 /* console_shim.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBCE2007778A00364758 /* console_shim.js */; };
+		E866FCB22007784200364758 /* rangy-core.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD02007778A00364758 /* rangy-core.js */; };
+		E866FCB32007784200364758 /* rangy-cssclassapplier.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD12007778A00364758 /* rangy-cssclassapplier.js */; };
+		E866FCB42007784200364758 /* rangy-highlighter.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD22007778A00364758 /* rangy-highlighter.js */; };
+		E866FCB52007784200364758 /* rangy-position.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD32007778A00364758 /* rangy-position.js */; };
+		E866FCB62007784200364758 /* rangy-selectionsaverestore.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD42007778A00364758 /* rangy-selectionsaverestore.js */; };
+		E866FCB72007784200364758 /* rangy-serializer.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD52007778A00364758 /* rangy-serializer.js */; };
+		E866FCB82007784200364758 /* rangy-textrange.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD62007778A00364758 /* rangy-textrange.js */; };
+		E866FCB92007784200364758 /* rangy.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD72007778A00364758 /* rangy.js */; };
+		E866FCBA2007784200364758 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD82007778A00364758 /* license.txt */; };
+		E866FCBB2007784200364758 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = E866FBD92007778A00364758 /* package-lock.json */; };
+		E866FCBC2007784200364758 /* package.cson in Resources */ = {isa = PBXBuildFile; fileRef = E866FBDA2007778A00364758 /* package.cson */; };
+		E866FCBD2007784200364758 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = E866FBDB2007778A00364758 /* package.json */; };
+		E866FCBE2007784200364758 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBDE2007778A00364758 /* main.js */; };
+		E866FCBF2007784200364758 /* controller.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE02007778A00364758 /* controller.js */; };
+		E866FCC02007784200364758 /* helpers.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE12007778A00364758 /* helpers.js */; };
+		E866FCC12007784200364758 /* class.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE32007778A00364758 /* class.js */; };
+		E866FCC22007784200364758 /* length.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE42007778A00364758 /* length.js */; };
+		E866FCC32007784200364758 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE52007778A00364758 /* main.js */; };
+		E866FCC42007784200364758 /* manager.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE62007778A00364758 /* manager.js */; };
+		E866FCC52007784200364758 /* copied_text_styles.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE82007778A00364758 /* copied_text_styles.js */; };
+		E866FCC62007784200364758 /* group.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBE92007778A00364758 /* group.js */; };
+		E866FCC72007784200364758 /* text_line_inferrer.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBEA2007778A00364758 /* text_line_inferrer.js */; };
+		E866FCC82007784200364758 /* border_view.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBEC2007778A00364758 /* border_view.js */; };
+		E866FCC92007784200364758 /* view.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBED2007778A00364758 /* view.js */; };
+		E866FCCA2007784200364758 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBEF2007778A00364758 /* main.js */; };
+		E866FCCB2007784200364758 /* plugins.cson in Resources */ = {isa = PBXBuildFile; fileRef = E866FBF02007778A00364758 /* plugins.cson */; };
+		E866FCCC2007784200364758 /* PLUGINS.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FBF12007778A00364758 /* PLUGINS.md */; };
+		E866FCCD2007784200364758 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FBF42007778A00364758 /* CONTRIBUTING.md */; };
+		E866FCCE2007784200364758 /* ISSUE_TEMPLATE.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FBF52007778A00364758 /* ISSUE_TEMPLATE.md */; };
+		E866FCCF2007784200364758 /* PULL_REQUEST_TEMPLATE.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FBF62007778A00364758 /* PULL_REQUEST_TEMPLATE.md */; };
+		E866FCD02007784200364758 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E866FBF72007778A00364758 /* .gitignore */; };
+		E866FCD12007784200364758 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = E866FBF82007778A00364758 /* .travis.yml */; };
+		E866FCD22007784200364758 /* RequireJS_config_browser.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBFA2007778A00364758 /* RequireJS_config_browser.js */; };
+		E866FCD32007784200364758 /* RequireJS_config_common.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBFB2007778A00364758 /* RequireJS_config_common.js */; };
+		E866FCD42007784200364758 /* RequireJS_config_multiple-bundles.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBFC2007778A00364758 /* RequireJS_config_multiple-bundles.js */; };
+		E866FCD52007784200364758 /* RequireJS_config_multiple-bundles_external-libs.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBFD2007778A00364758 /* RequireJS_config_multiple-bundles_external-libs.js */; };
+		E866FCD62007784200364758 /* RequireJS_config_single-bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FBFE2007778A00364758 /* RequireJS_config_single-bundle.js */; };
+		E866FCD72007784200364758 /* cfi_parser.pegjs in Resources */ = {isa = PBXBuildFile; fileRef = E866FBFF2007778A00364758 /* cfi_parser.pegjs */; };
+		E866FCD82007784200364758 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC012007778A00364758 /* index.js */; };
+		E866FCD92007784200364758 /* index_NO-RequireJS.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC022007778A00364758 /* index_NO-RequireJS.html */; };
+		E866FCDA2007784200364758 /* index_NO-RequireJS_TESTS.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC032007778A00364758 /* index_NO-RequireJS_TESTS.html */; };
+		E866FCDB2007784200364758 /* index_RequireJS_multiple-bundles.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC042007778A00364758 /* index_RequireJS_multiple-bundles.html */; };
+		E866FCDC2007784200364758 /* index_RequireJS_multiple-bundles_TESTS.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC052007778A00364758 /* index_RequireJS_multiple-bundles_TESTS.html */; };
+		E866FCDD2007784200364758 /* index_RequireJS_no-optimize.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC062007778B00364758 /* index_RequireJS_no-optimize.html */; };
+		E866FCDE2007784200364758 /* index_RequireJS_no-optimize_TESTS.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC072007778B00364758 /* index_RequireJS_no-optimize_TESTS.html */; };
+		E866FCDF2007784200364758 /* index_RequireJS_single-bundle.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC082007778B00364758 /* index_RequireJS_single-bundle.html */; };
+		E866FCE02007784200364758 /* index_RequireJS_single-bundle_TESTS.html in Resources */ = {isa = PBXBuildFile; fileRef = E866FC092007778B00364758 /* index_RequireJS_single-bundle_TESTS.html */; };
+		E866FCE12007784200364758 /* index_tests_jasmine-jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC0A2007778B00364758 /* index_tests_jasmine-jquery.js */; };
+		E866FCE22007784200364758 /* index_tests_Karma.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC0B2007778B00364758 /* index_tests_Karma.js */; };
+		E866FCE32007784200364758 /* cfi_parser_gen.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC0D2007778B00364758 /* cfi_parser_gen.js */; };
+		E866FCE42007784200364758 /* cfi_API.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC0F2007778B00364758 /* cfi_API.js */; };
+		E866FCE52007784200364758 /* cfi_generator.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC102007778B00364758 /* cfi_generator.js */; };
+		E866FCE62007784200364758 /* cfi_instructions.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC112007778B00364758 /* cfi_instructions.js */; };
+		E866FCE72007784200364758 /* cfi_interpreter.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC122007778B00364758 /* cfi_interpreter.js */; };
+		E866FCE82007784200364758 /* cfi_runtime_errors.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC132007778B00364758 /* cfi_runtime_errors.js */; };
+		E866FCE92007784200364758 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = E866FC142007778B00364758 /* license.txt */; };
+		E866FCEA2007784200364758 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = E866FC152007778B00364758 /* package-lock.json */; };
+		E866FCEB2007784200364758 /* package.cson in Resources */ = {isa = PBXBuildFile; fileRef = E866FC162007778B00364758 /* package.cson */; };
+		E866FCEC2007784200364758 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = E866FC172007778B00364758 /* package.json */; };
+		E866FCED2007784200364758 /* concat.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC192007778B00364758 /* concat.js */; };
+		E866FCEE2007784200364758 /* genOPDS.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC1A2007778B00364758 /* genOPDS.js */; };
+		E866FCEF2007784200364758 /* gitHubForksUpdater.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC1B2007778B00364758 /* gitHubForksUpdater.js */; };
+		E866FCF02007784200364758 /* http-server.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC1C2007778B00364758 /* http-server.js */; };
+		E866FCF12007784200364758 /* jshint_glob.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC1D2007778B00364758 /* jshint_glob.js */; };
+		E866FCF22007784200364758 /* optimizePackageJsonScripts.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC1E2007778B00364758 /* optimizePackageJsonScripts.js */; };
+		E866FCF32007784200364758 /* patchRequireJS.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC1F2007778B00364758 /* patchRequireJS.js */; };
+		E866FCF42007784200364758 /* pluginsConfigMaker.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC202007778B00364758 /* pluginsConfigMaker.js */; };
+		E866FCF52007784200364758 /* RequireJS_config.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC212007778B00364758 /* RequireJS_config.js */; };
+		E866FCF62007784200364758 /* RequireJS_function_multiple-bundles_complete.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC222007778B00364758 /* RequireJS_function_multiple-bundles_complete.js */; };
+		E866FCF72007784200364758 /* RequireJS_function_single-bundle_complete.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC232007778B00364758 /* RequireJS_function_single-bundle_complete.js */; };
+		E866FCF82007784200364758 /* versionsMaker.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC242007778B00364758 /* versionsMaker.js */; };
+		E866FCF92007784200364758 /* webbrowser.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC252007778B00364758 /* webbrowser.js */; };
+		E866FCFA2007784200364758 /* readium-cfi-js_build_tasks.png in Resources */ = {isa = PBXBuildFile; fileRef = E866FC262007778B00364758 /* readium-cfi-js_build_tasks.png */; };
+		E866FCFB2007784200364758 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FC272007778B00364758 /* README.md */; };
+		E866FCFC2007784200364758 /* karma.conf.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC292007778B00364758 /* karma.conf.js */; };
+		E866FCFD2007784200364758 /* karma.travis.conf.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC2A2007778B00364758 /* karma.travis.conf.js */; };
+		E866FCFE2007784200364758 /* iframe_content.xhtml in Resources */ = {isa = PBXBuildFile; fileRef = E866FC2D2007778B00364758 /* iframe_content.xhtml */; };
+		E866FCFF2007784200364758 /* moby_dick_content_doc.xhtml in Resources */ = {isa = PBXBuildFile; fileRef = E866FC2E2007778B00364758 /* moby_dick_content_doc.xhtml */; };
+		E866FD002007784200364758 /* moby_dick_package.opf in Resources */ = {isa = PBXBuildFile; fileRef = E866FC2F2007778B00364758 /* moby_dick_package.opf */; };
+		E866FD012007784200364758 /* jasmine-jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC312007778B00364758 /* jasmine-jquery.js */; };
+		E866FD022007784200364758 /* karma-loaded.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC322007778B00364758 /* karma-loaded.js */; };
+		E866FD032007784200364758 /* cfi_generator_spec.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC342007778B00364758 /* cfi_generator_spec.js */; };
+		E866FD042007784200364758 /* cfi_instructions_spec.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC352007778B00364758 /* cfi_instructions_spec.js */; };
+		E866FD052007784200364758 /* cfi_interpreter_spec.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC362007778B00364758 /* cfi_interpreter_spec.js */; };
+		E866FD062007784200364758 /* cfi_parser_spec.js in Resources */ = {isa = PBXBuildFile; fileRef = E866FC372007778B00364758 /* cfi_parser_spec.js */; };
+		E866FD072007784200364758 /* yarn.lock in Resources */ = {isa = PBXBuildFile; fileRef = E866FC382007778B00364758 /* yarn.lock */; };
+		E866FD082007784200364758 /* yuidocs.json in Resources */ = {isa = PBXBuildFile; fileRef = E866FC392007778B00364758 /* yuidocs.json */; };
+		E866FD092007784200364758 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E866FC3A2007778B00364758 /* README.md */; };
+		E866FD0A2007784200364758 /* sdk.css in Resources */ = {isa = PBXBuildFile; fileRef = E866FC3C2007778B00364758 /* sdk.css */; };
+		E866FD0B2007784200364758 /* yarn.lock in Resources */ = {isa = PBXBuildFile; fileRef = E866FC3D2007778B00364758 /* yarn.lock */; };
+		E866FD0C2007784200364758 /* yuidocs.json in Resources */ = {isa = PBXBuildFile; fileRef = E866FC3E2007778B00364758 /* yuidocs.json */; };
+		E866FD0D2007784200364758 /* wasteland-20120118.epub in Resources */ = {isa = PBXBuildFile; fileRef = E866FC3F2007778B00364758 /* wasteland-20120118.epub */; };
+		E866FD0E2007786200364758 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB512007774E00364758 /* AppDelegate.m */; };
+		E866FD0F2007786200364758 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB562007774E00364758 /* BaseViewController.m */; };
+		E866FD102007786200364758 /* ContainerFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB502007774D00364758 /* ContainerFile.m */; };
+		E866FD112007786200364758 /* EPubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB572007774E00364758 /* EPubViewController.m */; };
+		E866FD122007786200364758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E866FB4E2007774D00364758 /* main.m */; };
+		E866FD132007786500364758 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E866FB552007774E00364758 /* Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E866FC42200777F600364758 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E866FC41200777F600364758 /* RDFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E866FB35200776F700364758 /* EPubFramework-iOSLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EPubFramework-iOSLauncher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E866FB38200776F700364758 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E866FB39200776F700364758 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E866FB3B200776F700364758 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E866FB3C200776F700364758 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E866FB3F200776F700364758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E866FB41200776F700364758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E866FB44200776F700364758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E866FB46200776F700364758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E866FB47200776F700364758 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E866FB4E2007774D00364758 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E866FB4F2007774D00364758 /* ContainerFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerFile.h; sourceTree = "<group>"; };
+		E866FB502007774D00364758 /* ContainerFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerFile.m; sourceTree = "<group>"; };
+		E866FB512007774E00364758 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E866FB522007774E00364758 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E866FB532007774E00364758 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E866FB542007774E00364758 /* EPubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPubViewController.h; sourceTree = "<group>"; };
+		E866FB552007774E00364758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E866FB562007774E00364758 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E866FB572007774E00364758 /* EPubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPubViewController.m; sourceTree = "<group>"; };
+		E866FB582007777E00364758 /* RDFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RDFramework.framework; sourceTree = "<group>"; };
+		E866FB5A2007778A00364758 /* annotations.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = annotations.css; sourceTree = "<group>"; };
+		E866FB5B2007778A00364758 /* childrens-literature-20130206.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "childrens-literature-20130206.epub"; sourceTree = "<group>"; };
+		E866FB5C2007778A00364758 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E866FB5D2007778A00364758 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		E866FB5E2007778A00364758 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		E866FB5F2007778A00364758 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		E866FB602007778A00364758 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		E866FB612007778A00364758 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E866FB622007778A00364758 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E866FB642007778A00364758 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E866FB652007778A00364758 /* epub30-test-0120-20131022.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "epub30-test-0120-20131022.epub"; sourceTree = "<group>"; };
+		E866FB662007778A00364758 /* epub30-test-0220-20131022.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "epub30-test-0220-20131022.epub"; sourceTree = "<group>"; };
+		E866FB672007778A00364758 /* epubReadingSystem.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = epubReadingSystem.epub; sourceTree = "<group>"; };
+		E866FB682007778A00364758 /* epubReadingSystem.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = epubReadingSystem.js; sourceTree = "<group>"; };
+		E866FB692007778A00364758 /* epubReadingSystem.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = epubReadingSystem.sh; sourceTree = "<group>"; };
+		E866FB6A2007778A00364758 /* host_app_feedback.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = host_app_feedback.js; sourceTree = "<group>"; };
+		E866FB6B2007778A00364758 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		E866FB6C2007778A00364758 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
+		E866FB6D2007778A00364758 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		E866FB6E2007778A00364758 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		E866FB6F2007778A00364758 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		E866FB702007778A00364758 /* Icon-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50@2x.png"; sourceTree = "<group>"; };
+		E866FB712007778A00364758 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
+		E866FB722007778A00364758 /* Icon-57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57@2x.png"; sourceTree = "<group>"; };
+		E866FB732007778A00364758 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		E866FB742007778A00364758 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		E866FB752007778A00364758 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		E866FB762007778A00364758 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		E866FB772007778A00364758 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		E866FB792007778A00364758 /* MathJax.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = MathJax.js; sourceTree = "<group>"; };
+		E866FB7A2007778A00364758 /* moby-dick-20120118.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "moby-dick-20120118.epub"; sourceTree = "<group>"; };
+		E866FB7B2007778A00364758 /* page-blanche-20130322.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "page-blanche-20130322.epub"; sourceTree = "<group>"; };
+		E866FB7C2007778A00364758 /* reader.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = reader.css; sourceTree = "<group>"; };
+		E866FB7D2007778A00364758 /* reader.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = reader.html; sourceTree = "<group>"; };
+		E866FB7E2007778A00364758 /* reader_RequireJS-multiple-bundles.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "reader_RequireJS-multiple-bundles.html"; sourceTree = "<group>"; };
+		E866FB7F2007778A00364758 /* reader_RequireJS-no-optimize.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "reader_RequireJS-no-optimize.html"; sourceTree = "<group>"; };
+		E866FB802007778A00364758 /* reader_RequireJS-single-bundle.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "reader_RequireJS-single-bundle.html"; sourceTree = "<group>"; };
+		E866FB832007778A00364758 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		E866FB842007778A00364758 /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
+		E866FB852007778A00364758 /* PULL_REQUEST_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PULL_REQUEST_TEMPLATE.md; sourceTree = "<group>"; };
+		E866FB862007778A00364758 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E866FB872007778A00364758 /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		E866FB892007778A00364758 /* RequireJS_config_browser.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RequireJS_config_browser.js; sourceTree = "<group>"; };
+		E866FB8A2007778A00364758 /* RequireJS_config_common.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RequireJS_config_common.js; sourceTree = "<group>"; };
+		E866FB8B2007778A00364758 /* RequireJS_config_multiple-bundles.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_config_multiple-bundles.js"; sourceTree = "<group>"; };
+		E866FB8C2007778A00364758 /* RequireJS_config_multiple-bundles_external-libs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_config_multiple-bundles_external-libs.js"; sourceTree = "<group>"; };
+		E866FB8D2007778A00364758 /* RequireJS_config_single-bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_config_single-bundle.js"; sourceTree = "<group>"; };
+		E866FB902007778A00364758 /* readium-cfi-js.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-cfi-js.js"; sourceTree = "<group>"; };
+		E866FB912007778A00364758 /* readium-cfi-js.js.bundles.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-cfi-js.js.bundles.js"; sourceTree = "<group>"; };
+		E866FB922007778A00364758 /* readium-cfi-js.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "readium-cfi-js.js.map"; sourceTree = "<group>"; };
+		E866FB932007778A00364758 /* readium-external-libs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-external-libs.js"; sourceTree = "<group>"; };
+		E866FB942007778A00364758 /* readium-external-libs.js.bundles.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-external-libs.js.bundles.js"; sourceTree = "<group>"; };
+		E866FB952007778A00364758 /* readium-external-libs.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "readium-external-libs.js.map"; sourceTree = "<group>"; };
+		E866FB962007778A00364758 /* readium-shared-js.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-shared-js.js"; sourceTree = "<group>"; };
+		E866FB972007778A00364758 /* readium-shared-js.js.bundles.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-shared-js.js.bundles.js"; sourceTree = "<group>"; };
+		E866FB982007778A00364758 /* readium-shared-js.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "readium-shared-js.js.map"; sourceTree = "<group>"; };
+		E866FB992007778A00364758 /* RequireJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RequireJS.js; sourceTree = "<group>"; };
+		E866FB9B2007778A00364758 /* readium-shared-js_all.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-shared-js_all.js"; sourceTree = "<group>"; };
+		E866FB9C2007778A00364758 /* readium-shared-js_all.js.bundles.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "readium-shared-js_all.js.bundles.js"; sourceTree = "<group>"; };
+		E866FB9D2007778A00364758 /* readium-shared-js_all.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "readium-shared-js_all.js.map"; sourceTree = "<group>"; };
+		E866FB9F2007778A00364758 /* sdk.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = sdk.css; sourceTree = "<group>"; };
+		E866FBA12007778A00364758 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		E866FBA22007778A00364758 /* index_RequireJS_multiple-bundles.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_multiple-bundles.html"; sourceTree = "<group>"; };
+		E866FBA32007778A00364758 /* index_RequireJS_no-optimize.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_no-optimize.html"; sourceTree = "<group>"; };
+		E866FBA42007778A00364758 /* index_RequireJS_single-bundle.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_single-bundle.html"; sourceTree = "<group>"; };
+		E866FBA62007778A00364758 /* sample_styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = sample_styles.css; sourceTree = "<group>"; };
+		E866FBA82007778A00364758 /* globals.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = globals.js; sourceTree = "<group>"; };
+		E866FBA92007778A00364758 /* globalsSetup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = globalsSetup.js; sourceTree = "<group>"; };
+		E866FBAA2007778A00364758 /* helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = helpers.js; sourceTree = "<group>"; };
+		E866FBAC2007778A00364758 /* bookmark_data.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bookmark_data.js; sourceTree = "<group>"; };
+		E866FBAD2007778A00364758 /* current_pages_info.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = current_pages_info.js; sourceTree = "<group>"; };
+		E866FBAE2007778A00364758 /* fixed_page_spread.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = fixed_page_spread.js; sourceTree = "<group>"; };
+		E866FBAF2007778A00364758 /* media_overlay.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = media_overlay.js; sourceTree = "<group>"; };
+		E866FBB02007778A00364758 /* metadata.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = metadata.js; sourceTree = "<group>"; };
+		E866FBB12007778A00364758 /* node_range_info.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = node_range_info.js; sourceTree = "<group>"; };
+		E866FBB22007778A00364758 /* package.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = package.js; sourceTree = "<group>"; };
+		E866FBB32007778A00364758 /* package_data.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = package_data.js; sourceTree = "<group>"; };
+		E866FBB42007778A00364758 /* page_open_request.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = page_open_request.js; sourceTree = "<group>"; };
+		E866FBB52007778A00364758 /* smil_iterator.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = smil_iterator.js; sourceTree = "<group>"; };
+		E866FBB62007778A00364758 /* smil_model.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = smil_model.js; sourceTree = "<group>"; };
+		E866FBB72007778A00364758 /* spine.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = spine.js; sourceTree = "<group>"; };
+		E866FBB82007778A00364758 /* spine_item.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = spine_item.js; sourceTree = "<group>"; };
+		E866FBB92007778A00364758 /* style.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = style.js; sourceTree = "<group>"; };
+		E866FBBA2007778A00364758 /* style_collection.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = style_collection.js; sourceTree = "<group>"; };
+		E866FBBB2007778A00364758 /* switches.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = switches.js; sourceTree = "<group>"; };
+		E866FBBC2007778A00364758 /* trigger.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = trigger.js; sourceTree = "<group>"; };
+		E866FBBD2007778A00364758 /* viewer_settings.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = viewer_settings.js; sourceTree = "<group>"; };
+		E866FBBE2007778A00364758 /* plugins_controller.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = plugins_controller.js; sourceTree = "<group>"; };
+		E866FBC02007778A00364758 /* audio_player.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = audio_player.js; sourceTree = "<group>"; };
+		E866FBC12007778A00364758 /* cfi_navigation_logic.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_navigation_logic.js; sourceTree = "<group>"; };
+		E866FBC22007778A00364758 /* external_agent_support.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = external_agent_support.js; sourceTree = "<group>"; };
+		E866FBC32007778A00364758 /* fixed_view.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = fixed_view.js; sourceTree = "<group>"; };
+		E866FBC42007778A00364758 /* iframe_loader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = iframe_loader.js; sourceTree = "<group>"; };
+		E866FBC52007778A00364758 /* internal_links_support.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = internal_links_support.js; sourceTree = "<group>"; };
+		E866FBC62007778A00364758 /* media_overlay_data_injector.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = media_overlay_data_injector.js; sourceTree = "<group>"; };
+		E866FBC72007778A00364758 /* media_overlay_element_highlighter.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = media_overlay_element_highlighter.js; sourceTree = "<group>"; };
+		E866FBC82007778A00364758 /* media_overlay_player.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = media_overlay_player.js; sourceTree = "<group>"; };
+		E866FBC92007778A00364758 /* one_page_view.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = one_page_view.js; sourceTree = "<group>"; };
+		E866FBCA2007778A00364758 /* reader_view.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reader_view.js; sourceTree = "<group>"; };
+		E866FBCB2007778A00364758 /* reflowable_view.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reflowable_view.js; sourceTree = "<group>"; };
+		E866FBCC2007778A00364758 /* scroll_view.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = scroll_view.js; sourceTree = "<group>"; };
+		E866FBCE2007778A00364758 /* console_shim.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = console_shim.js; sourceTree = "<group>"; };
+		E866FBD02007778A00364758 /* rangy-core.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "rangy-core.js"; sourceTree = "<group>"; };
+		E866FBD12007778A00364758 /* rangy-cssclassapplier.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "rangy-cssclassapplier.js"; sourceTree = "<group>"; };
+		E866FBD22007778A00364758 /* rangy-highlighter.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "rangy-highlighter.js"; sourceTree = "<group>"; };
+		E866FBD32007778A00364758 /* rangy-position.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "rangy-position.js"; sourceTree = "<group>"; };
+		E866FBD42007778A00364758 /* rangy-selectionsaverestore.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "rangy-selectionsaverestore.js"; sourceTree = "<group>"; };
+		E866FBD52007778A00364758 /* rangy-serializer.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "rangy-serializer.js"; sourceTree = "<group>"; };
+		E866FBD62007778A00364758 /* rangy-textrange.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "rangy-textrange.js"; sourceTree = "<group>"; };
+		E866FBD72007778A00364758 /* rangy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = rangy.js; sourceTree = "<group>"; };
+		E866FBD82007778A00364758 /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		E866FBD92007778A00364758 /* package-lock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
+		E866FBDA2007778A00364758 /* package.cson */ = {isa = PBXFileReference; lastKnownFileType = text; path = package.cson; sourceTree = "<group>"; };
+		E866FBDB2007778A00364758 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		E866FBDE2007778A00364758 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		E866FBE02007778A00364758 /* controller.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = controller.js; sourceTree = "<group>"; };
+		E866FBE12007778A00364758 /* helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = helpers.js; sourceTree = "<group>"; };
+		E866FBE32007778A00364758 /* class.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = class.js; sourceTree = "<group>"; };
+		E866FBE42007778A00364758 /* length.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = length.js; sourceTree = "<group>"; };
+		E866FBE52007778A00364758 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		E866FBE62007778A00364758 /* manager.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = manager.js; sourceTree = "<group>"; };
+		E866FBE82007778A00364758 /* copied_text_styles.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = copied_text_styles.js; sourceTree = "<group>"; };
+		E866FBE92007778A00364758 /* group.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = group.js; sourceTree = "<group>"; };
+		E866FBEA2007778A00364758 /* text_line_inferrer.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = text_line_inferrer.js; sourceTree = "<group>"; };
+		E866FBEC2007778A00364758 /* border_view.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = border_view.js; sourceTree = "<group>"; };
+		E866FBED2007778A00364758 /* view.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view.js; sourceTree = "<group>"; };
+		E866FBEF2007778A00364758 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		E866FBF02007778A00364758 /* plugins.cson */ = {isa = PBXFileReference; lastKnownFileType = text; path = plugins.cson; sourceTree = "<group>"; };
+		E866FBF12007778A00364758 /* PLUGINS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PLUGINS.md; sourceTree = "<group>"; };
+		E866FBF42007778A00364758 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		E866FBF52007778A00364758 /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
+		E866FBF62007778A00364758 /* PULL_REQUEST_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PULL_REQUEST_TEMPLATE.md; sourceTree = "<group>"; };
+		E866FBF72007778A00364758 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E866FBF82007778A00364758 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		E866FBFA2007778A00364758 /* RequireJS_config_browser.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RequireJS_config_browser.js; sourceTree = "<group>"; };
+		E866FBFB2007778A00364758 /* RequireJS_config_common.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RequireJS_config_common.js; sourceTree = "<group>"; };
+		E866FBFC2007778A00364758 /* RequireJS_config_multiple-bundles.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_config_multiple-bundles.js"; sourceTree = "<group>"; };
+		E866FBFD2007778A00364758 /* RequireJS_config_multiple-bundles_external-libs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_config_multiple-bundles_external-libs.js"; sourceTree = "<group>"; };
+		E866FBFE2007778A00364758 /* RequireJS_config_single-bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_config_single-bundle.js"; sourceTree = "<group>"; };
+		E866FBFF2007778A00364758 /* cfi_parser.pegjs */ = {isa = PBXFileReference; lastKnownFileType = text; path = cfi_parser.pegjs; sourceTree = "<group>"; };
+		E866FC012007778A00364758 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		E866FC022007778A00364758 /* index_NO-RequireJS.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_NO-RequireJS.html"; sourceTree = "<group>"; };
+		E866FC032007778A00364758 /* index_NO-RequireJS_TESTS.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_NO-RequireJS_TESTS.html"; sourceTree = "<group>"; };
+		E866FC042007778A00364758 /* index_RequireJS_multiple-bundles.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_multiple-bundles.html"; sourceTree = "<group>"; };
+		E866FC052007778A00364758 /* index_RequireJS_multiple-bundles_TESTS.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_multiple-bundles_TESTS.html"; sourceTree = "<group>"; };
+		E866FC062007778B00364758 /* index_RequireJS_no-optimize.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_no-optimize.html"; sourceTree = "<group>"; };
+		E866FC072007778B00364758 /* index_RequireJS_no-optimize_TESTS.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_no-optimize_TESTS.html"; sourceTree = "<group>"; };
+		E866FC082007778B00364758 /* index_RequireJS_single-bundle.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_single-bundle.html"; sourceTree = "<group>"; };
+		E866FC092007778B00364758 /* index_RequireJS_single-bundle_TESTS.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index_RequireJS_single-bundle_TESTS.html"; sourceTree = "<group>"; };
+		E866FC0A2007778B00364758 /* index_tests_jasmine-jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "index_tests_jasmine-jquery.js"; sourceTree = "<group>"; };
+		E866FC0B2007778B00364758 /* index_tests_Karma.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index_tests_Karma.js; sourceTree = "<group>"; };
+		E866FC0D2007778B00364758 /* cfi_parser_gen.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_parser_gen.js; sourceTree = "<group>"; };
+		E866FC0F2007778B00364758 /* cfi_API.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_API.js; sourceTree = "<group>"; };
+		E866FC102007778B00364758 /* cfi_generator.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_generator.js; sourceTree = "<group>"; };
+		E866FC112007778B00364758 /* cfi_instructions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_instructions.js; sourceTree = "<group>"; };
+		E866FC122007778B00364758 /* cfi_interpreter.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_interpreter.js; sourceTree = "<group>"; };
+		E866FC132007778B00364758 /* cfi_runtime_errors.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_runtime_errors.js; sourceTree = "<group>"; };
+		E866FC142007778B00364758 /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		E866FC152007778B00364758 /* package-lock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
+		E866FC162007778B00364758 /* package.cson */ = {isa = PBXFileReference; lastKnownFileType = text; path = package.cson; sourceTree = "<group>"; };
+		E866FC172007778B00364758 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		E866FC192007778B00364758 /* concat.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = concat.js; sourceTree = "<group>"; };
+		E866FC1A2007778B00364758 /* genOPDS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = genOPDS.js; sourceTree = "<group>"; };
+		E866FC1B2007778B00364758 /* gitHubForksUpdater.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = gitHubForksUpdater.js; sourceTree = "<group>"; };
+		E866FC1C2007778B00364758 /* http-server.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "http-server.js"; sourceTree = "<group>"; };
+		E866FC1D2007778B00364758 /* jshint_glob.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jshint_glob.js; sourceTree = "<group>"; };
+		E866FC1E2007778B00364758 /* optimizePackageJsonScripts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = optimizePackageJsonScripts.js; sourceTree = "<group>"; };
+		E866FC1F2007778B00364758 /* patchRequireJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = patchRequireJS.js; sourceTree = "<group>"; };
+		E866FC202007778B00364758 /* pluginsConfigMaker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = pluginsConfigMaker.js; sourceTree = "<group>"; };
+		E866FC212007778B00364758 /* RequireJS_config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RequireJS_config.js; sourceTree = "<group>"; };
+		E866FC222007778B00364758 /* RequireJS_function_multiple-bundles_complete.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_function_multiple-bundles_complete.js"; sourceTree = "<group>"; };
+		E866FC232007778B00364758 /* RequireJS_function_single-bundle_complete.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "RequireJS_function_single-bundle_complete.js"; sourceTree = "<group>"; };
+		E866FC242007778B00364758 /* versionsMaker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = versionsMaker.js; sourceTree = "<group>"; };
+		E866FC252007778B00364758 /* webbrowser.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = webbrowser.js; sourceTree = "<group>"; };
+		E866FC262007778B00364758 /* readium-cfi-js_build_tasks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readium-cfi-js_build_tasks.png"; sourceTree = "<group>"; };
+		E866FC272007778B00364758 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E866FC292007778B00364758 /* karma.conf.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = karma.conf.js; sourceTree = "<group>"; };
+		E866FC2A2007778B00364758 /* karma.travis.conf.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = karma.travis.conf.js; sourceTree = "<group>"; };
+		E866FC2D2007778B00364758 /* iframe_content.xhtml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iframe_content.xhtml; sourceTree = "<group>"; };
+		E866FC2E2007778B00364758 /* moby_dick_content_doc.xhtml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = moby_dick_content_doc.xhtml; sourceTree = "<group>"; };
+		E866FC2F2007778B00364758 /* moby_dick_package.opf */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = moby_dick_package.opf; sourceTree = "<group>"; };
+		E866FC312007778B00364758 /* jasmine-jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jasmine-jquery.js"; sourceTree = "<group>"; };
+		E866FC322007778B00364758 /* karma-loaded.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "karma-loaded.js"; sourceTree = "<group>"; };
+		E866FC342007778B00364758 /* cfi_generator_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_generator_spec.js; sourceTree = "<group>"; };
+		E866FC352007778B00364758 /* cfi_instructions_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_instructions_spec.js; sourceTree = "<group>"; };
+		E866FC362007778B00364758 /* cfi_interpreter_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_interpreter_spec.js; sourceTree = "<group>"; };
+		E866FC372007778B00364758 /* cfi_parser_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cfi_parser_spec.js; sourceTree = "<group>"; };
+		E866FC382007778B00364758 /* yarn.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = yarn.lock; sourceTree = "<group>"; };
+		E866FC392007778B00364758 /* yuidocs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yuidocs.json; sourceTree = "<group>"; };
+		E866FC3A2007778B00364758 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E866FC3C2007778B00364758 /* sdk.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = sdk.css; sourceTree = "<group>"; };
+		E866FC3D2007778B00364758 /* yarn.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = yarn.lock; sourceTree = "<group>"; };
+		E866FC3E2007778B00364758 /* yuidocs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yuidocs.json; sourceTree = "<group>"; };
+		E866FC3F2007778B00364758 /* wasteland-20120118.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "wasteland-20120118.epub"; sourceTree = "<group>"; };
+		E866FC442007780100364758 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E866FC462007780700364758 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E866FC482007782600364758 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E866FC4A2007783300364758 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +447,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E866FC4B2007783300364758 /* CoreGraphics.framework in Frameworks */,
+				E866FC492007782600364758 /* Foundation.framework in Frameworks */,
+				E866FC472007780700364758 /* UIKit.framework in Frameworks */,
+				E866FC452007780200364758 /* WebKit.framework in Frameworks */,
+				E866FC40200777F600364758 /* RDFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +463,7 @@
 			children = (
 				E866FB37200776F700364758 /* EPubFramework-iOSLauncher */,
 				E866FB36200776F700364758 /* Products */,
+				E866FC432007780100364758 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +478,512 @@
 		E866FB37200776F700364758 /* EPubFramework-iOSLauncher */ = {
 			isa = PBXGroup;
 			children = (
-				E866FB38200776F700364758 /* AppDelegate.h */,
-				E866FB39200776F700364758 /* AppDelegate.m */,
-				E866FB3B200776F700364758 /* ViewController.h */,
-				E866FB3C200776F700364758 /* ViewController.m */,
-				E866FB3E200776F700364758 /* Main.storyboard */,
-				E866FB41200776F700364758 /* Assets.xcassets */,
-				E866FB43200776F700364758 /* LaunchScreen.storyboard */,
-				E866FB46200776F700364758 /* Info.plist */,
-				E866FB47200776F700364758 /* main.m */,
+				E866FB592007778A00364758 /* Resources */,
+				E866FB582007777E00364758 /* RDFramework.framework */,
+				E866FB532007774E00364758 /* AppDelegate.h */,
+				E866FB512007774E00364758 /* AppDelegate.m */,
+				E866FB522007774E00364758 /* BaseViewController.h */,
+				E866FB562007774E00364758 /* BaseViewController.m */,
+				E866FB4F2007774D00364758 /* ContainerFile.h */,
+				E866FB502007774D00364758 /* ContainerFile.m */,
+				E866FB542007774E00364758 /* EPubViewController.h */,
+				E866FB572007774E00364758 /* EPubViewController.m */,
+				E866FB552007774E00364758 /* Info.plist */,
+				E866FB4E2007774D00364758 /* main.m */,
 			);
 			path = "EPubFramework-iOSLauncher";
+			sourceTree = "<group>";
+		};
+		E866FB592007778A00364758 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB5A2007778A00364758 /* annotations.css */,
+				E866FB5B2007778A00364758 /* childrens-literature-20130206.epub */,
+				E866FB5C2007778A00364758 /* Default-568h@2x.png */,
+				E866FB5D2007778A00364758 /* Default-Landscape.png */,
+				E866FB5E2007778A00364758 /* Default-Landscape@2x.png */,
+				E866FB5F2007778A00364758 /* Default-Portrait.png */,
+				E866FB602007778A00364758 /* Default-Portrait@2x.png */,
+				E866FB612007778A00364758 /* Default.png */,
+				E866FB622007778A00364758 /* Default@2x.png */,
+				E866FB632007778A00364758 /* Localizable.strings */,
+				E866FB652007778A00364758 /* epub30-test-0120-20131022.epub */,
+				E866FB662007778A00364758 /* epub30-test-0220-20131022.epub */,
+				E866FB672007778A00364758 /* epubReadingSystem.epub */,
+				E866FB682007778A00364758 /* epubReadingSystem.js */,
+				E866FB692007778A00364758 /* epubReadingSystem.sh */,
+				E866FB6A2007778A00364758 /* host_app_feedback.js */,
+				E866FB6B2007778A00364758 /* Icon-29.png */,
+				E866FB6C2007778A00364758 /* Icon-29@2x.png */,
+				E866FB6D2007778A00364758 /* Icon-40.png */,
+				E866FB6E2007778A00364758 /* Icon-40@2x.png */,
+				E866FB6F2007778A00364758 /* Icon-50.png */,
+				E866FB702007778A00364758 /* Icon-50@2x.png */,
+				E866FB712007778A00364758 /* Icon-57.png */,
+				E866FB722007778A00364758 /* Icon-57@2x.png */,
+				E866FB732007778A00364758 /* Icon-60@2x.png */,
+				E866FB742007778A00364758 /* Icon-72.png */,
+				E866FB752007778A00364758 /* Icon-72@2x.png */,
+				E866FB762007778A00364758 /* Icon-76.png */,
+				E866FB772007778A00364758 /* Icon-76@2x.png */,
+				E866FB782007778A00364758 /* mathjax */,
+				E866FB7A2007778A00364758 /* moby-dick-20120118.epub */,
+				E866FB7B2007778A00364758 /* page-blanche-20130322.epub */,
+				E866FB7C2007778A00364758 /* reader.css */,
+				E866FB7D2007778A00364758 /* reader.html */,
+				E866FB7E2007778A00364758 /* reader_RequireJS-multiple-bundles.html */,
+				E866FB7F2007778A00364758 /* reader_RequireJS-no-optimize.html */,
+				E866FB802007778A00364758 /* reader_RequireJS-single-bundle.html */,
+				E866FB812007778A00364758 /* readium-shared-js */,
+				E866FC3F2007778B00364758 /* wasteland-20120118.epub */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E866FB782007778A00364758 /* mathjax */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB792007778A00364758 /* MathJax.js */,
+			);
+			path = mathjax;
+			sourceTree = "<group>";
+		};
+		E866FB812007778A00364758 /* readium-shared-js */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB822007778A00364758 /* .github */,
+				E866FB862007778A00364758 /* .gitignore */,
+				E866FB872007778A00364758 /* .gitmodules */,
+				E866FB882007778A00364758 /* build-config */,
+				E866FB8E2007778A00364758 /* build-output */,
+				E866FBA02007778A00364758 /* dev */,
+				E866FBA52007778A00364758 /* host_app_reference_files */,
+				E866FBA72007778A00364758 /* js */,
+				E866FBCD2007778A00364758 /* lib */,
+				E866FBD82007778A00364758 /* license.txt */,
+				E866FBD92007778A00364758 /* package-lock.json */,
+				E866FBDA2007778A00364758 /* package.cson */,
+				E866FBDB2007778A00364758 /* package.json */,
+				E866FBDC2007778A00364758 /* plugins */,
+				E866FBF12007778A00364758 /* PLUGINS.md */,
+				E866FBF22007778A00364758 /* readium-cfi-js */,
+				E866FC3A2007778B00364758 /* README.md */,
+				E866FC3B2007778B00364758 /* static */,
+				E866FC3D2007778B00364758 /* yarn.lock */,
+				E866FC3E2007778B00364758 /* yuidocs.json */,
+			);
+			path = "readium-shared-js";
+			sourceTree = "<group>";
+		};
+		E866FB822007778A00364758 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB832007778A00364758 /* CONTRIBUTING.md */,
+				E866FB842007778A00364758 /* ISSUE_TEMPLATE.md */,
+				E866FB852007778A00364758 /* PULL_REQUEST_TEMPLATE.md */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		E866FB882007778A00364758 /* build-config */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB892007778A00364758 /* RequireJS_config_browser.js */,
+				E866FB8A2007778A00364758 /* RequireJS_config_common.js */,
+				E866FB8B2007778A00364758 /* RequireJS_config_multiple-bundles.js */,
+				E866FB8C2007778A00364758 /* RequireJS_config_multiple-bundles_external-libs.js */,
+				E866FB8D2007778A00364758 /* RequireJS_config_single-bundle.js */,
+			);
+			path = "build-config";
+			sourceTree = "<group>";
+		};
+		E866FB8E2007778A00364758 /* build-output */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB8F2007778A00364758 /* _multiple-bundles */,
+				E866FB9A2007778A00364758 /* _single-bundle */,
+				E866FB9E2007778A00364758 /* css */,
+			);
+			path = "build-output";
+			sourceTree = "<group>";
+		};
+		E866FB8F2007778A00364758 /* _multiple-bundles */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB902007778A00364758 /* readium-cfi-js.js */,
+				E866FB912007778A00364758 /* readium-cfi-js.js.bundles.js */,
+				E866FB922007778A00364758 /* readium-cfi-js.js.map */,
+				E866FB932007778A00364758 /* readium-external-libs.js */,
+				E866FB942007778A00364758 /* readium-external-libs.js.bundles.js */,
+				E866FB952007778A00364758 /* readium-external-libs.js.map */,
+				E866FB962007778A00364758 /* readium-shared-js.js */,
+				E866FB972007778A00364758 /* readium-shared-js.js.bundles.js */,
+				E866FB982007778A00364758 /* readium-shared-js.js.map */,
+				E866FB992007778A00364758 /* RequireJS.js */,
+			);
+			path = "_multiple-bundles";
+			sourceTree = "<group>";
+		};
+		E866FB9A2007778A00364758 /* _single-bundle */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB9B2007778A00364758 /* readium-shared-js_all.js */,
+				E866FB9C2007778A00364758 /* readium-shared-js_all.js.bundles.js */,
+				E866FB9D2007778A00364758 /* readium-shared-js_all.js.map */,
+			);
+			path = "_single-bundle";
+			sourceTree = "<group>";
+		};
+		E866FB9E2007778A00364758 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				E866FB9F2007778A00364758 /* sdk.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		E866FBA02007778A00364758 /* dev */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBA12007778A00364758 /* index.js */,
+				E866FBA22007778A00364758 /* index_RequireJS_multiple-bundles.html */,
+				E866FBA32007778A00364758 /* index_RequireJS_no-optimize.html */,
+				E866FBA42007778A00364758 /* index_RequireJS_single-bundle.html */,
+			);
+			path = dev;
+			sourceTree = "<group>";
+		};
+		E866FBA52007778A00364758 /* host_app_reference_files */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBA62007778A00364758 /* sample_styles.css */,
+			);
+			path = host_app_reference_files;
+			sourceTree = "<group>";
+		};
+		E866FBA72007778A00364758 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBA82007778A00364758 /* globals.js */,
+				E866FBA92007778A00364758 /* globalsSetup.js */,
+				E866FBAA2007778A00364758 /* helpers.js */,
+				E866FBAB2007778A00364758 /* models */,
+				E866FBBE2007778A00364758 /* plugins_controller.js */,
+				E866FBBF2007778A00364758 /* views */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		E866FBAB2007778A00364758 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBAC2007778A00364758 /* bookmark_data.js */,
+				E866FBAD2007778A00364758 /* current_pages_info.js */,
+				E866FBAE2007778A00364758 /* fixed_page_spread.js */,
+				E866FBAF2007778A00364758 /* media_overlay.js */,
+				E866FBB02007778A00364758 /* metadata.js */,
+				E866FBB12007778A00364758 /* node_range_info.js */,
+				E866FBB22007778A00364758 /* package.js */,
+				E866FBB32007778A00364758 /* package_data.js */,
+				E866FBB42007778A00364758 /* page_open_request.js */,
+				E866FBB52007778A00364758 /* smil_iterator.js */,
+				E866FBB62007778A00364758 /* smil_model.js */,
+				E866FBB72007778A00364758 /* spine.js */,
+				E866FBB82007778A00364758 /* spine_item.js */,
+				E866FBB92007778A00364758 /* style.js */,
+				E866FBBA2007778A00364758 /* style_collection.js */,
+				E866FBBB2007778A00364758 /* switches.js */,
+				E866FBBC2007778A00364758 /* trigger.js */,
+				E866FBBD2007778A00364758 /* viewer_settings.js */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E866FBBF2007778A00364758 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBC02007778A00364758 /* audio_player.js */,
+				E866FBC12007778A00364758 /* cfi_navigation_logic.js */,
+				E866FBC22007778A00364758 /* external_agent_support.js */,
+				E866FBC32007778A00364758 /* fixed_view.js */,
+				E866FBC42007778A00364758 /* iframe_loader.js */,
+				E866FBC52007778A00364758 /* internal_links_support.js */,
+				E866FBC62007778A00364758 /* media_overlay_data_injector.js */,
+				E866FBC72007778A00364758 /* media_overlay_element_highlighter.js */,
+				E866FBC82007778A00364758 /* media_overlay_player.js */,
+				E866FBC92007778A00364758 /* one_page_view.js */,
+				E866FBCA2007778A00364758 /* reader_view.js */,
+				E866FBCB2007778A00364758 /* reflowable_view.js */,
+				E866FBCC2007778A00364758 /* scroll_view.js */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E866FBCD2007778A00364758 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBCE2007778A00364758 /* console_shim.js */,
+				E866FBCF2007778A00364758 /* rangy */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E866FBCF2007778A00364758 /* rangy */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBD02007778A00364758 /* rangy-core.js */,
+				E866FBD12007778A00364758 /* rangy-cssclassapplier.js */,
+				E866FBD22007778A00364758 /* rangy-highlighter.js */,
+				E866FBD32007778A00364758 /* rangy-position.js */,
+				E866FBD42007778A00364758 /* rangy-selectionsaverestore.js */,
+				E866FBD52007778A00364758 /* rangy-serializer.js */,
+				E866FBD62007778A00364758 /* rangy-textrange.js */,
+				E866FBD72007778A00364758 /* rangy.js */,
+			);
+			path = rangy;
+			sourceTree = "<group>";
+		};
+		E866FBDC2007778A00364758 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBDD2007778A00364758 /* example */,
+				E866FBDF2007778A00364758 /* highlights */,
+				E866FBEE2007778A00364758 /* hypothesis */,
+				E866FBF02007778A00364758 /* plugins.cson */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		E866FBDD2007778A00364758 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBDE2007778A00364758 /* main.js */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		E866FBDF2007778A00364758 /* highlights */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBE02007778A00364758 /* controller.js */,
+				E866FBE12007778A00364758 /* helpers.js */,
+				E866FBE22007778A00364758 /* lib */,
+				E866FBE52007778A00364758 /* main.js */,
+				E866FBE62007778A00364758 /* manager.js */,
+				E866FBE72007778A00364758 /* models */,
+				E866FBEB2007778A00364758 /* views */,
+			);
+			path = highlights;
+			sourceTree = "<group>";
+		};
+		E866FBE22007778A00364758 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBE32007778A00364758 /* class.js */,
+				E866FBE42007778A00364758 /* length.js */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E866FBE72007778A00364758 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBE82007778A00364758 /* copied_text_styles.js */,
+				E866FBE92007778A00364758 /* group.js */,
+				E866FBEA2007778A00364758 /* text_line_inferrer.js */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E866FBEB2007778A00364758 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBEC2007778A00364758 /* border_view.js */,
+				E866FBED2007778A00364758 /* view.js */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E866FBEE2007778A00364758 /* hypothesis */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBEF2007778A00364758 /* main.js */,
+			);
+			path = hypothesis;
+			sourceTree = "<group>";
+		};
+		E866FBF22007778A00364758 /* readium-cfi-js */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBF32007778A00364758 /* .github */,
+				E866FBF72007778A00364758 /* .gitignore */,
+				E866FBF82007778A00364758 /* .travis.yml */,
+				E866FBF92007778A00364758 /* build-config */,
+				E866FBFF2007778A00364758 /* cfi_parser.pegjs */,
+				E866FC002007778A00364758 /* dev */,
+				E866FC0C2007778B00364758 /* gen */,
+				E866FC0E2007778B00364758 /* js */,
+				E866FC142007778B00364758 /* license.txt */,
+				E866FC152007778B00364758 /* package-lock.json */,
+				E866FC162007778B00364758 /* package.cson */,
+				E866FC172007778B00364758 /* package.json */,
+				E866FC182007778B00364758 /* readium-build-tools */,
+				E866FC262007778B00364758 /* readium-cfi-js_build_tasks.png */,
+				E866FC272007778B00364758 /* README.md */,
+				E866FC282007778B00364758 /* tests */,
+				E866FC382007778B00364758 /* yarn.lock */,
+				E866FC392007778B00364758 /* yuidocs.json */,
+			);
+			path = "readium-cfi-js";
+			sourceTree = "<group>";
+		};
+		E866FBF32007778A00364758 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBF42007778A00364758 /* CONTRIBUTING.md */,
+				E866FBF52007778A00364758 /* ISSUE_TEMPLATE.md */,
+				E866FBF62007778A00364758 /* PULL_REQUEST_TEMPLATE.md */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		E866FBF92007778A00364758 /* build-config */ = {
+			isa = PBXGroup;
+			children = (
+				E866FBFA2007778A00364758 /* RequireJS_config_browser.js */,
+				E866FBFB2007778A00364758 /* RequireJS_config_common.js */,
+				E866FBFC2007778A00364758 /* RequireJS_config_multiple-bundles.js */,
+				E866FBFD2007778A00364758 /* RequireJS_config_multiple-bundles_external-libs.js */,
+				E866FBFE2007778A00364758 /* RequireJS_config_single-bundle.js */,
+			);
+			path = "build-config";
+			sourceTree = "<group>";
+		};
+		E866FC002007778A00364758 /* dev */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC012007778A00364758 /* index.js */,
+				E866FC022007778A00364758 /* index_NO-RequireJS.html */,
+				E866FC032007778A00364758 /* index_NO-RequireJS_TESTS.html */,
+				E866FC042007778A00364758 /* index_RequireJS_multiple-bundles.html */,
+				E866FC052007778A00364758 /* index_RequireJS_multiple-bundles_TESTS.html */,
+				E866FC062007778B00364758 /* index_RequireJS_no-optimize.html */,
+				E866FC072007778B00364758 /* index_RequireJS_no-optimize_TESTS.html */,
+				E866FC082007778B00364758 /* index_RequireJS_single-bundle.html */,
+				E866FC092007778B00364758 /* index_RequireJS_single-bundle_TESTS.html */,
+				E866FC0A2007778B00364758 /* index_tests_jasmine-jquery.js */,
+				E866FC0B2007778B00364758 /* index_tests_Karma.js */,
+			);
+			path = dev;
+			sourceTree = "<group>";
+		};
+		E866FC0C2007778B00364758 /* gen */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC0D2007778B00364758 /* cfi_parser_gen.js */,
+			);
+			path = gen;
+			sourceTree = "<group>";
+		};
+		E866FC0E2007778B00364758 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC0F2007778B00364758 /* cfi_API.js */,
+				E866FC102007778B00364758 /* cfi_generator.js */,
+				E866FC112007778B00364758 /* cfi_instructions.js */,
+				E866FC122007778B00364758 /* cfi_interpreter.js */,
+				E866FC132007778B00364758 /* cfi_runtime_errors.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		E866FC182007778B00364758 /* readium-build-tools */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC192007778B00364758 /* concat.js */,
+				E866FC1A2007778B00364758 /* genOPDS.js */,
+				E866FC1B2007778B00364758 /* gitHubForksUpdater.js */,
+				E866FC1C2007778B00364758 /* http-server.js */,
+				E866FC1D2007778B00364758 /* jshint_glob.js */,
+				E866FC1E2007778B00364758 /* optimizePackageJsonScripts.js */,
+				E866FC1F2007778B00364758 /* patchRequireJS.js */,
+				E866FC202007778B00364758 /* pluginsConfigMaker.js */,
+				E866FC212007778B00364758 /* RequireJS_config.js */,
+				E866FC222007778B00364758 /* RequireJS_function_multiple-bundles_complete.js */,
+				E866FC232007778B00364758 /* RequireJS_function_single-bundle_complete.js */,
+				E866FC242007778B00364758 /* versionsMaker.js */,
+				E866FC252007778B00364758 /* webbrowser.js */,
+			);
+			path = "readium-build-tools";
+			sourceTree = "<group>";
+		};
+		E866FC282007778B00364758 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC292007778B00364758 /* karma.conf.js */,
+				E866FC2A2007778B00364758 /* karma.travis.conf.js */,
+				E866FC2B2007778B00364758 /* spec */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		E866FC2B2007778B00364758 /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC2C2007778B00364758 /* fixtures */,
+				E866FC302007778B00364758 /* helpers */,
+				E866FC322007778B00364758 /* karma-loaded.js */,
+				E866FC332007778B00364758 /* models */,
+			);
+			path = spec;
+			sourceTree = "<group>";
+		};
+		E866FC2C2007778B00364758 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC2D2007778B00364758 /* iframe_content.xhtml */,
+				E866FC2E2007778B00364758 /* moby_dick_content_doc.xhtml */,
+				E866FC2F2007778B00364758 /* moby_dick_package.opf */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		E866FC302007778B00364758 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC312007778B00364758 /* jasmine-jquery.js */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		E866FC332007778B00364758 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC342007778B00364758 /* cfi_generator_spec.js */,
+				E866FC352007778B00364758 /* cfi_instructions_spec.js */,
+				E866FC362007778B00364758 /* cfi_interpreter_spec.js */,
+				E866FC372007778B00364758 /* cfi_parser_spec.js */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E866FC3B2007778B00364758 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC3C2007778B00364758 /* sdk.css */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		E866FC432007780100364758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E866FC4A2007783300364758 /* CoreGraphics.framework */,
+				E866FC482007782600364758 /* Foundation.framework */,
+				E866FC462007780700364758 /* UIKit.framework */,
+				E866FC442007780100364758 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +996,7 @@
 				E866FB31200776F700364758 /* Sources */,
 				E866FB32200776F700364758 /* Frameworks */,
 				E866FB33200776F700364758 /* Resources */,
+				E866FC42200777F600364758 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,9 +1045,201 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E866FB45200776F700364758 /* LaunchScreen.storyboard in Resources */,
-				E866FB42200776F700364758 /* Assets.xcassets in Resources */,
-				E866FB40200776F700364758 /* Main.storyboard in Resources */,
+				E866FC4C2007784200364758 /* annotations.css in Resources */,
+				E866FC4D2007784200364758 /* childrens-literature-20130206.epub in Resources */,
+				E866FC4E2007784200364758 /* Default-568h@2x.png in Resources */,
+				E866FC4F2007784200364758 /* Default-Landscape.png in Resources */,
+				E866FC502007784200364758 /* Default-Landscape@2x.png in Resources */,
+				E866FC512007784200364758 /* Default-Portrait.png in Resources */,
+				E866FC522007784200364758 /* Default-Portrait@2x.png in Resources */,
+				E866FC532007784200364758 /* Default.png in Resources */,
+				E866FC542007784200364758 /* Default@2x.png in Resources */,
+				E866FC552007784200364758 /* Localizable.strings in Resources */,
+				E866FC562007784200364758 /* epub30-test-0120-20131022.epub in Resources */,
+				E866FC572007784200364758 /* epub30-test-0220-20131022.epub in Resources */,
+				E866FC582007784200364758 /* epubReadingSystem.epub in Resources */,
+				E866FC592007784200364758 /* epubReadingSystem.js in Resources */,
+				E866FC5A2007784200364758 /* epubReadingSystem.sh in Resources */,
+				E866FC5B2007784200364758 /* host_app_feedback.js in Resources */,
+				E866FC5C2007784200364758 /* Icon-29.png in Resources */,
+				E866FC5D2007784200364758 /* Icon-29@2x.png in Resources */,
+				E866FC5E2007784200364758 /* Icon-40.png in Resources */,
+				E866FC5F2007784200364758 /* Icon-40@2x.png in Resources */,
+				E866FC602007784200364758 /* Icon-50.png in Resources */,
+				E866FC612007784200364758 /* Icon-50@2x.png in Resources */,
+				E866FC622007784200364758 /* Icon-57.png in Resources */,
+				E866FC632007784200364758 /* Icon-57@2x.png in Resources */,
+				E866FC642007784200364758 /* Icon-60@2x.png in Resources */,
+				E866FC652007784200364758 /* Icon-72.png in Resources */,
+				E866FC662007784200364758 /* Icon-72@2x.png in Resources */,
+				E866FC672007784200364758 /* Icon-76.png in Resources */,
+				E866FC682007784200364758 /* Icon-76@2x.png in Resources */,
+				E866FC692007784200364758 /* MathJax.js in Resources */,
+				E866FC6A2007784200364758 /* moby-dick-20120118.epub in Resources */,
+				E866FC6B2007784200364758 /* page-blanche-20130322.epub in Resources */,
+				E866FC6C2007784200364758 /* reader.css in Resources */,
+				E866FC6D2007784200364758 /* reader.html in Resources */,
+				E866FC6E2007784200364758 /* reader_RequireJS-multiple-bundles.html in Resources */,
+				E866FC6F2007784200364758 /* reader_RequireJS-no-optimize.html in Resources */,
+				E866FC702007784200364758 /* reader_RequireJS-single-bundle.html in Resources */,
+				E866FC712007784200364758 /* CONTRIBUTING.md in Resources */,
+				E866FD132007786500364758 /* Info.plist in Resources */,
+				E866FC722007784200364758 /* ISSUE_TEMPLATE.md in Resources */,
+				E866FC732007784200364758 /* PULL_REQUEST_TEMPLATE.md in Resources */,
+				E866FC742007784200364758 /* .gitignore in Resources */,
+				E866FC752007784200364758 /* .gitmodules in Resources */,
+				E866FC762007784200364758 /* RequireJS_config_browser.js in Resources */,
+				E866FC772007784200364758 /* RequireJS_config_common.js in Resources */,
+				E866FC782007784200364758 /* RequireJS_config_multiple-bundles.js in Resources */,
+				E866FC792007784200364758 /* RequireJS_config_multiple-bundles_external-libs.js in Resources */,
+				E866FC7A2007784200364758 /* RequireJS_config_single-bundle.js in Resources */,
+				E866FC7B2007784200364758 /* readium-cfi-js.js in Resources */,
+				E866FC7C2007784200364758 /* readium-cfi-js.js.bundles.js in Resources */,
+				E866FC7D2007784200364758 /* readium-cfi-js.js.map in Resources */,
+				E866FC7E2007784200364758 /* readium-external-libs.js in Resources */,
+				E866FC7F2007784200364758 /* readium-external-libs.js.bundles.js in Resources */,
+				E866FC802007784200364758 /* readium-external-libs.js.map in Resources */,
+				E866FC812007784200364758 /* readium-shared-js.js in Resources */,
+				E866FC822007784200364758 /* readium-shared-js.js.bundles.js in Resources */,
+				E866FC832007784200364758 /* readium-shared-js.js.map in Resources */,
+				E866FC842007784200364758 /* RequireJS.js in Resources */,
+				E866FC852007784200364758 /* readium-shared-js_all.js in Resources */,
+				E866FC862007784200364758 /* readium-shared-js_all.js.bundles.js in Resources */,
+				E866FC872007784200364758 /* readium-shared-js_all.js.map in Resources */,
+				E866FC882007784200364758 /* sdk.css in Resources */,
+				E866FC892007784200364758 /* index.js in Resources */,
+				E866FC8A2007784200364758 /* index_RequireJS_multiple-bundles.html in Resources */,
+				E866FC8B2007784200364758 /* index_RequireJS_no-optimize.html in Resources */,
+				E866FC8C2007784200364758 /* index_RequireJS_single-bundle.html in Resources */,
+				E866FC8D2007784200364758 /* sample_styles.css in Resources */,
+				E866FC8E2007784200364758 /* globals.js in Resources */,
+				E866FC8F2007784200364758 /* globalsSetup.js in Resources */,
+				E866FC902007784200364758 /* helpers.js in Resources */,
+				E866FC912007784200364758 /* bookmark_data.js in Resources */,
+				E866FC922007784200364758 /* current_pages_info.js in Resources */,
+				E866FC932007784200364758 /* fixed_page_spread.js in Resources */,
+				E866FC942007784200364758 /* media_overlay.js in Resources */,
+				E866FC952007784200364758 /* metadata.js in Resources */,
+				E866FC962007784200364758 /* node_range_info.js in Resources */,
+				E866FC972007784200364758 /* package.js in Resources */,
+				E866FC982007784200364758 /* package_data.js in Resources */,
+				E866FC992007784200364758 /* page_open_request.js in Resources */,
+				E866FC9A2007784200364758 /* smil_iterator.js in Resources */,
+				E866FC9B2007784200364758 /* smil_model.js in Resources */,
+				E866FC9C2007784200364758 /* spine.js in Resources */,
+				E866FC9D2007784200364758 /* spine_item.js in Resources */,
+				E866FC9E2007784200364758 /* style.js in Resources */,
+				E866FC9F2007784200364758 /* style_collection.js in Resources */,
+				E866FCA02007784200364758 /* switches.js in Resources */,
+				E866FCA12007784200364758 /* trigger.js in Resources */,
+				E866FCA22007784200364758 /* viewer_settings.js in Resources */,
+				E866FCA32007784200364758 /* plugins_controller.js in Resources */,
+				E866FCA42007784200364758 /* audio_player.js in Resources */,
+				E866FCA52007784200364758 /* cfi_navigation_logic.js in Resources */,
+				E866FCA62007784200364758 /* external_agent_support.js in Resources */,
+				E866FCA72007784200364758 /* fixed_view.js in Resources */,
+				E866FCA82007784200364758 /* iframe_loader.js in Resources */,
+				E866FCA92007784200364758 /* internal_links_support.js in Resources */,
+				E866FCAA2007784200364758 /* media_overlay_data_injector.js in Resources */,
+				E866FCAB2007784200364758 /* media_overlay_element_highlighter.js in Resources */,
+				E866FCAC2007784200364758 /* media_overlay_player.js in Resources */,
+				E866FCAD2007784200364758 /* one_page_view.js in Resources */,
+				E866FCAE2007784200364758 /* reader_view.js in Resources */,
+				E866FCAF2007784200364758 /* reflowable_view.js in Resources */,
+				E866FCB02007784200364758 /* scroll_view.js in Resources */,
+				E866FCB12007784200364758 /* console_shim.js in Resources */,
+				E866FCB22007784200364758 /* rangy-core.js in Resources */,
+				E866FCB32007784200364758 /* rangy-cssclassapplier.js in Resources */,
+				E866FCB42007784200364758 /* rangy-highlighter.js in Resources */,
+				E866FCB52007784200364758 /* rangy-position.js in Resources */,
+				E866FCB62007784200364758 /* rangy-selectionsaverestore.js in Resources */,
+				E866FCB72007784200364758 /* rangy-serializer.js in Resources */,
+				E866FCB82007784200364758 /* rangy-textrange.js in Resources */,
+				E866FCB92007784200364758 /* rangy.js in Resources */,
+				E866FCBA2007784200364758 /* license.txt in Resources */,
+				E866FCBB2007784200364758 /* package-lock.json in Resources */,
+				E866FCBC2007784200364758 /* package.cson in Resources */,
+				E866FCBD2007784200364758 /* package.json in Resources */,
+				E866FCBE2007784200364758 /* main.js in Resources */,
+				E866FCBF2007784200364758 /* controller.js in Resources */,
+				E866FCC02007784200364758 /* helpers.js in Resources */,
+				E866FCC12007784200364758 /* class.js in Resources */,
+				E866FCC22007784200364758 /* length.js in Resources */,
+				E866FCC32007784200364758 /* main.js in Resources */,
+				E866FCC42007784200364758 /* manager.js in Resources */,
+				E866FCC52007784200364758 /* copied_text_styles.js in Resources */,
+				E866FCC62007784200364758 /* group.js in Resources */,
+				E866FCC72007784200364758 /* text_line_inferrer.js in Resources */,
+				E866FCC82007784200364758 /* border_view.js in Resources */,
+				E866FCC92007784200364758 /* view.js in Resources */,
+				E866FCCA2007784200364758 /* main.js in Resources */,
+				E866FCCB2007784200364758 /* plugins.cson in Resources */,
+				E866FCCC2007784200364758 /* PLUGINS.md in Resources */,
+				E866FCCD2007784200364758 /* CONTRIBUTING.md in Resources */,
+				E866FCCE2007784200364758 /* ISSUE_TEMPLATE.md in Resources */,
+				E866FCCF2007784200364758 /* PULL_REQUEST_TEMPLATE.md in Resources */,
+				E866FCD02007784200364758 /* .gitignore in Resources */,
+				E866FCD12007784200364758 /* .travis.yml in Resources */,
+				E866FCD22007784200364758 /* RequireJS_config_browser.js in Resources */,
+				E866FCD32007784200364758 /* RequireJS_config_common.js in Resources */,
+				E866FCD42007784200364758 /* RequireJS_config_multiple-bundles.js in Resources */,
+				E866FCD52007784200364758 /* RequireJS_config_multiple-bundles_external-libs.js in Resources */,
+				E866FCD62007784200364758 /* RequireJS_config_single-bundle.js in Resources */,
+				E866FCD72007784200364758 /* cfi_parser.pegjs in Resources */,
+				E866FCD82007784200364758 /* index.js in Resources */,
+				E866FCD92007784200364758 /* index_NO-RequireJS.html in Resources */,
+				E866FCDA2007784200364758 /* index_NO-RequireJS_TESTS.html in Resources */,
+				E866FCDB2007784200364758 /* index_RequireJS_multiple-bundles.html in Resources */,
+				E866FCDC2007784200364758 /* index_RequireJS_multiple-bundles_TESTS.html in Resources */,
+				E866FCDD2007784200364758 /* index_RequireJS_no-optimize.html in Resources */,
+				E866FCDE2007784200364758 /* index_RequireJS_no-optimize_TESTS.html in Resources */,
+				E866FCDF2007784200364758 /* index_RequireJS_single-bundle.html in Resources */,
+				E866FCE02007784200364758 /* index_RequireJS_single-bundle_TESTS.html in Resources */,
+				E866FCE12007784200364758 /* index_tests_jasmine-jquery.js in Resources */,
+				E866FCE22007784200364758 /* index_tests_Karma.js in Resources */,
+				E866FCE32007784200364758 /* cfi_parser_gen.js in Resources */,
+				E866FCE42007784200364758 /* cfi_API.js in Resources */,
+				E866FCE52007784200364758 /* cfi_generator.js in Resources */,
+				E866FCE62007784200364758 /* cfi_instructions.js in Resources */,
+				E866FCE72007784200364758 /* cfi_interpreter.js in Resources */,
+				E866FCE82007784200364758 /* cfi_runtime_errors.js in Resources */,
+				E866FCE92007784200364758 /* license.txt in Resources */,
+				E866FCEA2007784200364758 /* package-lock.json in Resources */,
+				E866FCEB2007784200364758 /* package.cson in Resources */,
+				E866FCEC2007784200364758 /* package.json in Resources */,
+				E866FCED2007784200364758 /* concat.js in Resources */,
+				E866FCEE2007784200364758 /* genOPDS.js in Resources */,
+				E866FCEF2007784200364758 /* gitHubForksUpdater.js in Resources */,
+				E866FCF02007784200364758 /* http-server.js in Resources */,
+				E866FCF12007784200364758 /* jshint_glob.js in Resources */,
+				E866FCF22007784200364758 /* optimizePackageJsonScripts.js in Resources */,
+				E866FCF32007784200364758 /* patchRequireJS.js in Resources */,
+				E866FCF42007784200364758 /* pluginsConfigMaker.js in Resources */,
+				E866FCF52007784200364758 /* RequireJS_config.js in Resources */,
+				E866FCF62007784200364758 /* RequireJS_function_multiple-bundles_complete.js in Resources */,
+				E866FCF72007784200364758 /* RequireJS_function_single-bundle_complete.js in Resources */,
+				E866FCF82007784200364758 /* versionsMaker.js in Resources */,
+				E866FCF92007784200364758 /* webbrowser.js in Resources */,
+				E866FCFA2007784200364758 /* readium-cfi-js_build_tasks.png in Resources */,
+				E866FCFB2007784200364758 /* README.md in Resources */,
+				E866FCFC2007784200364758 /* karma.conf.js in Resources */,
+				E866FCFD2007784200364758 /* karma.travis.conf.js in Resources */,
+				E866FCFE2007784200364758 /* iframe_content.xhtml in Resources */,
+				E866FCFF2007784200364758 /* moby_dick_content_doc.xhtml in Resources */,
+				E866FD002007784200364758 /* moby_dick_package.opf in Resources */,
+				E866FD012007784200364758 /* jasmine-jquery.js in Resources */,
+				E866FD022007784200364758 /* karma-loaded.js in Resources */,
+				E866FD032007784200364758 /* cfi_generator_spec.js in Resources */,
+				E866FD042007784200364758 /* cfi_instructions_spec.js in Resources */,
+				E866FD052007784200364758 /* cfi_interpreter_spec.js in Resources */,
+				E866FD062007784200364758 /* cfi_parser_spec.js in Resources */,
+				E866FD072007784200364758 /* yarn.lock in Resources */,
+				E866FD082007784200364758 /* yuidocs.json in Resources */,
+				E866FD092007784200364758 /* README.md in Resources */,
+				E866FD0A2007784200364758 /* sdk.css in Resources */,
+				E866FD0B2007784200364758 /* yarn.lock in Resources */,
+				E866FD0C2007784200364758 /* yuidocs.json in Resources */,
+				E866FD0D2007784200364758 /* wasteland-20120118.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,29 +1250,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E866FB3D200776F700364758 /* ViewController.m in Sources */,
-				E866FB48200776F700364758 /* main.m in Sources */,
-				E866FB3A200776F700364758 /* AppDelegate.m in Sources */,
+				E866FD122007786200364758 /* main.m in Sources */,
+				E866FD0E2007786200364758 /* AppDelegate.m in Sources */,
+				E866FD102007786200364758 /* ContainerFile.m in Sources */,
+				E866FD112007786200364758 /* EPubViewController.m in Sources */,
+				E866FD0F2007786200364758 /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E866FB3E200776F700364758 /* Main.storyboard */ = {
+		E866FB632007778A00364758 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E866FB3F200776F700364758 /* Base */,
+				E866FB642007778A00364758 /* en */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E866FB43200776F700364758 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E866FB44200776F700364758 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,8 +1382,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JLKQX2E942;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EPubFramework-iOSLauncher",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${SDKROOT}/usr/include/libxml2",
+					"${SRCROOT}/readium-sdk/Platform/Apple/include",
+				);
 				INFOPLIST_FILE = "EPubFramework-iOSLauncher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tejsvi-Indpro.EPubFramework-iOSLauncher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,8 +1410,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JLKQX2E942;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EPubFramework-iOSLauncher",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${SDKROOT}/usr/include/libxml2",
+					"${SRCROOT}/readium-sdk/Platform/Apple/include",
+				);
 				INFOPLIST_FILE = "EPubFramework-iOSLauncher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tejsvi-Indpro.EPubFramework-iOSLauncher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
